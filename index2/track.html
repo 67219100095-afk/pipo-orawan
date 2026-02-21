@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<title>ติดตามการสั่งซื้อ</title>
+
+<script>
+function checkStatus() {
+    var orderId = document.getElementById("orderId").value;
+    var result = document.getElementById("result");
+
+    if(orderId.trim() !== ""){
+        result.innerHTML = " กำลังสั่งซื้อ...";
+        result.style.color = "green";
+        result.style.fontSize = "20px";
+    } else {
+        result.innerHTML = "กรุณากรอกหมายเลขคำสั่งซื้อ";
+        result.style.color = "red";
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- แบนเนอร์ -->
+<table border="1">
+<tr>
+<td>
+<img src="Green Bohemian Coming Soon Twitter Header (1400 x 200 px).png" width="100%">
+</td>
+</tr>
+</table>
+
+<br>
+
+<!-- เมนู -->
+<table border="1">
+<tr>
+<td><a href="index.html"><img src="home.png" width="120"></a></td>
+<td><a href="products.html"><img src="products.png" width="120"></a></td>
+<td><a href="body-mask.html"><img src="body-mask.png" width="120"></a></td>
+<td><a href="body-care.html"><img src="body-care.png" width="120"></a></td>
+<td><a href="best.html"><img src="best.png" width="120"></a></td>
+<td><a href="promo.html"><img src="promo.png" width="120"></a></td>
+<td><a href="sete.html"><img src="sets.png" width="120"></a></td>
+<td><a href="reviews.html"><img src="reviews.png" width="120"></a></td>
+<td><a href="how-to.html"><img src="how-to.png" width="120"></a></td>
+<td><a href="order.html"><img src="oeder.png" width="120"></a></td>
+<td><a href="track.html"><img src="track.png" width="120"></a></td>
+</tr>
+</table>
+
+<br><br>
+
+<center>
+<h2>ติดตามการสั่งซื้อ</h2>
+
+<table border="1" width="600" cellpadding="20">
+<tr align="center">
+<td>
+
+กรอกหมายเลขคำสั่งซื้อ<br><br>
+
+<input type="text" id="orderId" placeholder="กรอกหมายเลขคำสั่งซื้อ"><br><br>
+
+<button onclick="checkStatus()">ตรวจสอบสถานะ</button>
+
+<br><br>
+
+<p id="result"></p>
+
+</td>
+</tr>
+</table>
+
+</center>
+
+</body>
+</html>
