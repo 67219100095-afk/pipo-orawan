@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Products</title>
 
-<script type="text/javascript">
+<script>
 function MM_swapImgRestore() {
   var i,x,a=document.MM_sr;
   for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
@@ -24,16 +24,8 @@ function MM_preloadImages() {
 }
 
 function MM_findObj(n, d) {
-  var p,i,x;
   if(!d) d=document;
-  if((p=n.indexOf("?"))>0&&parent.frames.length){
-    d=parent.frames[n.substring(p+1)].document;
-    n=n.substring(0,p);
-  }
-  if(!(x=d[n])&&d.all) x=d.all[n];
-  for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  if(!x && d.getElementById) x=d.getElementById(n);
-  return x;
+  return d.getElementById(n);
 }
 
 function MM_swapImage() {
@@ -49,10 +41,22 @@ function MM_swapImage() {
 </script>
 </head>
 
-<body onLoad="MM_preloadImages('home (2).png','products (2).png','body-mask (2).png','body-care (2).png','best (2).png','promo (2).png','sets (2).png','reviews (2).png','how-to (2).png','oeder (2).png','track (2).png')">
+<body onLoad="MM_preloadImages(
+'index2/home (2).png',
+'index2/products (2).png',
+'index2/body-mask (2).png',
+'index2/body-care (2).png',
+'index2/best (2).png',
+'index2/promo (2).png',
+'index2/sets (2).png',
+'index2/reviews (2).png',
+'index2/how-to (2).png',
+'index2/order (2).png',
+'index2/track (2).png'
+)">
 
 <center>
-<img src="Green Bohemian Coming Soon Twitter Header (1400 x 200 px).png" width="1400" height="200">
+<img src="Green Bohemian Coming Soon Twitter Header (1400 x 200 px).png" width="1400">
 </center>
 
 <br>
@@ -61,85 +65,92 @@ function MM_swapImage() {
 <tr align="center">
 
 <td>
-  <a href="index.html" onmouseover="MM_swapImage('Image1','','index2/home (2).png',1)" onmouseout="MM_swapImgRestore()">
-<img src="index2/home.png" width="120" height="118" id="Image1">
+<a href="index.html"
+onmouseover="MM_swapImage('Image1','','index2/home (2).png',1)"
+onmouseout="MM_swapImgRestore()">
+<img src="index2/home.png" width="120" id="Image1">
+</a>
 </td>
 
-<td><a href="products.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','products (2).png',1)">
-<img src="products.png" width="120" height="118" id="Image2"></a></td>
+<td>
+<a href="products.html"
+onmouseover="MM_swapImage('Image2','','index2/products (2).png',1)"
+onmouseout="MM_swapImgRestore()">
+<img src="index2/products.png" width="120" id="Image2">
+</a>
+</td>
 
-<td><a href="body-mask.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','body-mask (2).png',1)">
-<img src="body-mask.png" width="120" height="118" id="Image3"></a></td>
+<td>
+<a href="body-mask.html"
+onmouseover="MM_swapImage('Image3','','index2/body-mask (2).png',1)"
+onmouseout="MM_swapImgRestore()">
+<img src="index2/body-mask.png" width="120" id="Image3">
+</a>
+</td>
 
-<td><a href="body-care.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','body-care (2).png',1)">
-<img src="body-care.png" width="120" height="118" id="Image4"></a></td>
+<td>
+<a href="body-care.html"
+onmouseover="MM_swapImage('Image4','','index2/body-care (2).png',1)"
+onmouseout="MM_swapImgRestore()">
+<img src="index2/body-care.png" width="120" id="Image4">
+</a>
+</td>
 
-<td><a href="best.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','best (2).png',1)">
-<img src="best.png" width="120" height="118" id="Image5"></a></td>
+<td>
+<a href="best.html"
+onmouseover="MM_swapImage('Image5','','index2/best (2).png',1)"
+onmouseout="MM_swapImgRestore()">
+<img src="index2/best.png" width="120" id="Image5">
+</a>
+</td>
 
-<td><a href="promo.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','promo (2).png',1)">
-<img src="promo.png" width="120" height="121" id="Image6"></a></td>
+<td>
+<a href="promo.html"
+onmouseover="MM_swapImage('Image6','','index2/promo (2).png',1)"
+onmouseout="MM_swapImgRestore()">
+<img src="index2/promo.png" width="120" id="Image6">
+</a>
+</td>
 
-<td><a href="sets.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','sets (2).png',1)">
-<img src="sets.png" width="120" height="118" id="Image7"></a></td>
+<td>
+<a href="sets.html"
+onmouseover="MM_swapImage('Image7','','index2/sets (2).png',1)"
+onmouseout="MM_swapImgRestore()">
+<img src="index2/sets.png" width="120" id="Image7">
+</a>
+</td>
 
-<td><a href="reviews.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','reviews (2).png',1)">
-<img src="reviews.png" width="120" height="121" id="Image8"></a></td>
+<td>
+<a href="reviews.html"
+onmouseover="MM_swapImage('Image8','','index2/reviews (2).png',1)"
+onmouseout="MM_swapImgRestore()">
+<img src="index2/reviews.png" width="120" id="Image8">
+</a>
+</td>
 
-<td><a href="how-to.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','how-to (2).png',1)">
-<img src="how-to.png" width="120" height="118" id="Image9"></a></td>
+<td>
+<a href="how-to.html"
+onmouseover="MM_swapImage('Image9','','index2/how-to (2).png',1)"
+onmouseout="MM_swapImgRestore()">
+<img src="index2/how-to.png" width="120" id="Image9">
+</a>
+</td>
 
-<td><a href="order.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image10','','oeder (2).png',1)">
-<img src="oeder.png" width="120" height="118" id="Image10"></a></td>
-<td><a href="track.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','track (2).png',1)">
-<img src="track.png" width="120" height="118" id="Image11"></a></td>
+<td>
+<a href="order.html"
+onmouseover="MM_swapImage('Image10','','index2/order (2).png',1)"
+onmouseout="MM_swapImgRestore()">
+<img src="index2/order.png" width="120" id="Image10">
+</a>
+</td>
+
+<td>
+<a href="track.html"
+onmouseover="MM_swapImage('Image11','','index2/track (2).png',1)"
+onmouseout="MM_swapImgRestore()">
+<img src="index2/track.png" width="120" id="Image11">
+</a>
+</td>
 
 </tr>
 </table>
-
-<br><br>
-
-<table border="1" width="1000" align="center" cellpadding="10">
-<tr>
-<th>รูปสินค้า</th>
-<th>ชื่อสินค้า</th>
-<th>ราคา</th>
-<th>สั่งซื้อ</th>
-</tr>
-
-<tr align="center">
-<td><img src="bd675ea061bf5d48.jpg" width="150"></td>
-<td>ครีมพอกผิว</td>
-<td>199 บาท</td>
-<td><a href="order.html"><button>สั่งซื้อ</button></a></td>
-</tr>
-
-<tr align="center">
-<td><img src="6ce12afc08f75336.jpg" width="150"></td>
-<td>ครีมทาผิว</td>
-<td>159 บาท</td>
-<td><a href="order.html"><button>สั่งซื้อ</button></a></td>
-</tr>
-
-<tr align="center">
-<td><img src="bd017bf5f67eb47e6b165699ecbc4b4c.jpg" width="150"></td>
-<td>สครับผิว</td>
-<td>179 บาท</td>
-<td><a href="order.html"><button>สั่งซื้อ</button></a></td>
-</tr>
-
-<tr align="center">
-<td><img src="8a89b2531295469493af5fc4ef5a8c0f~tplv-sdweummd6v-text-logo-v1_QHN1a2hzbWF5Ng==_q75.jpeg" width="150"></td>
-<td>สบู่ผิวขาว</td>
-<td>99 บาท</td>
-<td><a href="order.html"><button>สั่งซื้อ</button></a></td>
-</tr>
-
-</table>
-
-</body>
-</html>
-
-
-
-
